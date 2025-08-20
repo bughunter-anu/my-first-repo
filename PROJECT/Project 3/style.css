@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    transition: background 0.5s color 0.5s;
+}
+
+h1{
+    margin-bottom: 1rem;
+}
+
+textarea {
+    width: 90%;
+    max-width: 600px;
+    height: 300px;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    resize: none;
+    transition: background 0.5s, color 0.5s;
+}
+
+.toggle-container {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  
+  .toggle-container input[type="checkbox"] {
+    display: none;
+  }
+
+
+  .toggle-label {
+    width: 60px;
+    height: 30px;
+    background: #ffda6a;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.5s;
+  }
+
+  .toggle-label::after {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.3s;
+  }
+
+  input:checked + .toggle-label {
+    background: #2c3e50;
+  }
+
+  input:checked + .toggle-label::after {
+    left: 32px;
+  }
+
+  /* Day mode */
+  body, .container, textarea {
+    background: #f0f8ff;
+    color: #333;
+  }
+
+  /* Night mode */
+  input:checked ~ .container {
+    background: #1c1c2e;
+    color: #f0f8ff;
+  }
+
+  input:checked ~ .container textarea {
+    background: #2c2c3c;
+    color: #f0f8ff;
+  }
