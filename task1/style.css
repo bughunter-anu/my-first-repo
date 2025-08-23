@@ -1,0 +1,86 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+    }
+
+    .section {
+      border: 2px solid black;
+      padding: 1.2em;
+      margin: 2em;
+      border-radius: 25%;
+      width: fit-content;
+    }
+    .curved-box {
+      border: 2px solid black;
+      padding: 1.2em;
+      margin: 2em;
+      width: 250px;
+      border-top-left-radius: 25%;
+      border-bottom-left-radius: 0%;
+    }
+
+     .skills-box {
+      border: 2px solid black;
+      padding: 1.2em;
+      margin: 2em;
+      width: 250px;
+      border-top-right-radius: 25%;
+      border-bottom-right-radius: 0%;
+    }
+
+    .skills-box ul {
+      padding-left: 1.5em;
+    }
+
+     .hobbies-box {
+      border: 2px solid black;
+      padding: 1.2em;
+      margin: 2em;
+      width: 250px;
+      border-bottom-left-radius: 25%;
+    }
+
+    .hobbies-box ul {
+      padding-left: 1.5em;
+    }
+
+    
+    .form-box {
+      border: 2px solid black;
+      padding: 1.2em;
+      margin: 2em;
+      border-bottom-right-radius: 25%;
+      width: 300px;
+      
+    }
+
+    .form-box input, .form-box button {
+      display: block;
+      width: 90%;
+      margin: 0.5em 0;
+      padding: 0.5em;
+    }
+
+    ul {
+      padding-left: 1.5em;
+      margin-top: 0.5em;
+    }
+
+
+    /* Layout container to separate left and right */
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .left-group {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .right-group {
+      flex: 1;
+      min-width: 300px;
+    }
+  
