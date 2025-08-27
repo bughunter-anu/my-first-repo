@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+        .relative {
+            width: 4rem;
+            height: 8rem;
+            background-color: red;
+            position: relative;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+        }
+
+        .absolute {
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            background-color: yellow;
+            right: 1rem;
+            border-radius: 100%;
+            top: -1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative">
+        <div class="absolute"></div>
+    </div>
+
+    <div class="relative">
+        <div class="absolute"></div>
+    </div>
+
+    <div class="relative">
+        <div class="absolute"></div>
+    </div>
+
+    <div class="relative">
+        <div class="absolute"></div>
+    </div>
+</body>
+
+</html>
